@@ -1,0 +1,267 @@
+// Microsoft Visual C++ generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// English (U.S.) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+#ifdef _WIN32
+LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
+#pragma code_page(1252)
+#endif //_WIN32
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE 
+BEGIN
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE 
+BEGIN
+    "\r\n"
+    "#include ""veroverrides.h""\r\n"
+    "#include ""maxversion.r""\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_FluidTEST_PARAMETERS DIALOGEX 0, 0, 108, 147
+STYLE DS_SETFONT | WS_CHILD
+FONT 8, "MS Sans Serif", 0, 0, 0x0
+BEGIN
+    RTEXT           "Speed",IDC_SPEEDTEXT,12,6,22,8
+    CONTROL         "",IDC_SPEED,"CustEdit",WS_GROUP | WS_TABSTOP,49,6,42,10
+    CONTROL         "",IDC_SPEEDSPIN,"SpinnerControl",WS_GROUP,93,6,8,10
+    RTEXT           "Viscosity",IDC_VISCOSITYTEXT,6,18,39,8
+    CONTROL         "",IDC_VISCOSITY,"CustEdit",WS_GROUP | WS_TABSTOP,49,18,42,10
+    CONTROL         "",IDC_VISCOSITYSPIN,"SpinnerControl",WS_GROUP,93,18,8,10
+    GROUPBOX        "Direction:",IDC_STATIC,3,93,102,21
+    RTEXT           "Divergence:",IDC_DIVERGENCETEXT,6,104,39,8
+    CONTROL         "",IDC_DIVERGENCE,"CustEdit",WS_GROUP | WS_TABSTOP,49,103,42,10
+    CONTROL         "",IDC_DIVERGENCESPIN,"SpinnerControl",WS_GROUP,93,103,8,10
+    GROUPBOX        "Uniqueness:",IDC_UNIQUENESSBOX,3,116,102,27
+    RTEXT           "Seed:",IDC_SEEDTEXT,8,128,20,8
+    CONTROL         "",IDC_SEED,"CustEdit",WS_GROUP | WS_TABSTOP,30,128,34,10
+    CONTROL         "",IDC_SEEDSPIN,"SpinnerControl",WS_GROUP,66,128,8,10
+    CONTROL         "New",IDC_NEW,"CustButton",WS_GROUP | WS_TABSTOP,78,128,22,10
+    CONTROL         "Clean Sim",IDC_CLEANSIM,"CustButton",WS_GROUP | WS_TABSTOP,24,79,66,10
+    RTEXT           "Diffusion",IDC_DIFFUSIONTEXT,6,30,39,8
+    CONTROL         "",IDC_DIFFUSION,"CustEdit",WS_GROUP | WS_TABSTOP,49,30,42,10
+    CONTROL         "",IDC_DIFFUSIONSPIN,"SpinnerControl",WS_GROUP,93,30,8,10
+    RTEXT           "Mass",IDC_MASSTEXT,6,42,39,8
+    CONTROL         "",IDC_MASS,"CustEdit",WS_GROUP | WS_TABSTOP,49,42,42,10
+    CONTROL         "",IDC_MASSSPIN,"SpinnerControl",WS_GROUP,93,42,8,10
+    RTEXT           "Temperature",IDC_TEMPERTEXT,6,54,39,8
+    CONTROL         "",IDC_TEMPER,"CustEdit",WS_GROUP | WS_TABSTOP,49,54,42,10
+    CONTROL         "",IDC_TEMPERSPIN,"SpinnerControl",WS_GROUP,93,54,8,10
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Bitmap
+//
+
+IDB_SIMPLESPEED_INACTIVEICON BITMAP                  "SimpleSpeed_InactiveIcon.bmp"
+IDB_SIMPLESPEED_DEPOTICON BITMAP                  "SimpleSpeed_DepotIcon.bmp"
+IDB_SIMPLESPEED_ACTIVEICON BITMAP                  "SimpleSpeed_ActiveIcon.bmp"
+IDB_DEPOTICONMASK_OPERATOR BITMAP                  "Operator_DepotIconMask.bmp"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO 
+BEGIN
+    IDD_FluidTEST_PARAMETERS, DIALOG
+    BEGIN
+        BOTTOMMARGIN, 135
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE 
+BEGIN
+    IDS_PLUGINDESCRIPTION   "ParticleFlow Actions (Discreet)"
+    IDS_PARAMETERS          "Parameters"
+    IDS_EMITSTART           "Emit Start"
+    IDS_EMITSTOP            "Emit Stop"
+    IDS_AMOUNT              "Amount"
+    IDS_SUBFRAMESAMPLING    "Subframe Sampling"
+    IDS_PF_OPERATOR_CATEGORY "Operator"
+    IDS_TYPEYOURCOMMENTSHERE "Type your comments here"
+    IDS_VERTEXNOISE         "Vertex Noise"
+    IDS_SHAPETAPER          "Shape Taper"
+    IDS_RESTRICTTOAXIS      "Restrict Divergence To Axis"
+    IDS_DIVERGENCEAXIS_X    "Divergence Axis X"
+    IDS_DIVERGENCEAXIS_Y    "Divergence Axis Y"
+    IDS_LOCATION            "Location"
+    IDS_LOCATIONTYPE_PIVOT  "Pivot"
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_PLUS_OR_MINUS_CHAR  "+"
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_NUMFSUBMTLS         "Num SubMtls"
+    IDS_LOOP                "Loop"
+    IDS_SUBSPERFRAME        "Subs Per Frame"
+    IDS_OPERATOR_SIMPLESPEED_CLASS_NAME "MyFluidTest"
+    IDS_OPERATOR_SIMPLESPEED_OBJECT_NAME "MyFluidTest"
+    IDS_DIFFUSION           "Diffusion"
+    IDS_ALONG_ICON_ARROW    "Along Icon Arrow"
+    IDS_ICON_CENTER_0UT     "Icon Center Out"
+    IDS_ICON_ARROW_OUT      "Icon Arrow Out"
+    IDS_RAND_3D             "Random 3D"
+    IDS_RAND_HORIZ          "Random Horizontal"
+    IDS_INHERIT_PREV        "Inherit Previous"
+    IDS_REVERSE             "Reverse"
+    IDS_DIVERGENCE          "Divergence"
+    IDS_WORLD               "World"
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_PW_MINSPEED         "Min. Speed"
+    IDS_PW_MAXSPEED         "Max Speed"
+    IDS_PW_WILLCOLLIDEFRAME "Will Collide Frame"
+    IDS_PW_COLLISIONCOUNT   "Collision Count"
+    IDS_PW_COLLISIONCOUNTOPTIONS "Collision Count Options"
+    IDS_PARTICLE            "Particle"
+    IDS_SELECTIONLEVEL      "Selection Level"
+    IDS_GENERATESELECTIONCHANNEL "Generate Selection Channel"
+    IDS_NEWRANDOMSEED       "New Random Seed"
+    IDS_PICKSPLINE          "Pick Spline Object"
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_TRUEFORPARTICLESCOLLIDED "True for Particles Collided"
+    IDS_TRUEFORSPAWNPARTICLES "True for Spawn Particles"
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_PARTICLEFLOW_CATEGORY "Particle Flow"
+    IDS_UMAP                "U Map Coordinate"
+    IDS_VMAP                "V Map Coordinate"
+    IDS_WMAP                "W Map Coordinate"
+    IDS_MTLIDTYPE           "Material ID Type"
+    IDS_IDANIMTYPE          "Material ID Animation Type"
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_NONUNIFORMTYPE      "Non-Uniform Density Type"
+    IDS_ATTEMPTSMAX         "Maximum Number of Attempts"
+    IDS_APARTPLACEMENT      "Apart Placement"
+    IDS_DISTINCTPOINTSONLY  "Distinct Points Only"
+    IDS_APARTDISTANCE       "Apart Distance"
+    IDS_DENSITYTYPE         "Density Type"
+    IDS_DENSITYTYPE_GRAYSCALE "Grayscale"
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_DENSITYTYPE_OPACITY "Opacity"
+    IDS_DENSITYTYPE_GRAYSCALEOPACITY "Grayscale & Opacity"
+    IDS_DENSITYTYPE_RED     "Red"
+    IDS_DENSITYTYPE_GREEN   "Green"
+    IDS_DENSITYTYPE_BLUE    "Blue"
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_STEERTOWARDSTRAJECTORY "Steer Towards Trajectory"
+    IDS_DISTANCE            "Distance"
+    IDS_INFLUENCE           "Influence"
+    IDS_COMMENTS            "Comments"
+    IDS_TYPE                "Type"
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_OVERWRITE_ONCE      "Overwrite Once"
+    IDS_INHERIT_ONCE        "Inherit Once"
+    IDS_ABSOLUTE            "Absolute"
+    IDS_RELATIVE_FIRST      "Relative First"
+    IDS_RELATIVE_SUCCESSIVE "Relative Successive"
+    IDS_CONSTRAINSCALE      "Constrain Scale"
+    IDS_BIAS                "Bias"
+    IDS_NONE                "None"
+    IDS_CENTERED            "Centered"
+    IDS_TOWARDSMIN          "Towards Minimum"
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_SPEED               "Speed"
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_VISCOSITY           "Viscosity"
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_MASS                "Mass"
+END
+
+#endif    // English (U.S.) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+
+#include "veroverrides.h"
+#include "maxversion.r"
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+
